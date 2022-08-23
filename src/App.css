@@ -1,0 +1,159 @@
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #587e76;
+}
+
+.game{
+  position: relative;
+  background-color: #c1502e;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+  -moz-box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+  box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+}
+.reset{
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  text-align: center;
+  }
+  .reset button{
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: #c1502e;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  } 
+  .reset button:hover{
+    background-color: bisque;
+    color:#c1502e;
+    -webkit-box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+    -moz-box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+    box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+  }
+  .header-game{
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    text-align: center;
+    font-family:cursive;
+    font-size: 32px;
+    font-weight: 900;
+  }
+  .header-game-image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.header-game-image span{
+  margin-left:10px ;
+  margin-right: 10px;
+}
+.row-game{
+  display: flex;
+}
+
+.box-game {
+  margin: 5px;
+  padding: 15px;
+  color: black;
+  font-family:cursive;
+  font-size: 40px;
+  font-weight: 800;
+  height: 100px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-game:hover{
+  cursor: pointer;
+}
+.card {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.card:hover{
+  -webkit-box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+  -moz-box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+  box-shadow: 0px 0px 36px 0px rgba(97,37,18,1);
+}
+
+@media screen and (max-width:500px) {
+  .card-group{
+    display:block;
+   
+   width: 100%;
+  }
+  .Card-link-div{
+    height: 150px;
+    margin: 50px;
+    
+  }
+  .card {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+  }
+  .Card-link{
+    text-decoration: none;
+    color: antiquewhite;
+ 
+  }
+  .heading {
+    position: absolute;
+    top: 25px;
+    font-size: 28px;
+    font-weight: 800;
+    color: bisque;
+    font-family:cursive;
+  }
+
+}
+@media screen and (min-width:500px) {
+  .card-group{
+    display: flex;
+  }
+  .heading {
+    position: absolute;
+    top: 60px;
+    font-size: 36px;
+    font-weight: 800;
+    color: bisque;
+    font-family:cursive;
+  }
+  .Card-link{
+    text-decoration: none;
+    color: antiquewhite;
+    
+  }
+  .Card-link-div{
+    width: 240px;
+    
+  }
+}
+
+
+.home-button{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+}
+.home-button img:hover{
+  height: 35px;
+}
+
