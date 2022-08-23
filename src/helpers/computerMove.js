@@ -46,12 +46,8 @@ function ComputerMove(board) {
     }
     //indexList dizisinin uzunluğu göre random sayı varecek ve o indisteki değer gönderilcek 
     if (indexList.length > 0) {
-      const randomnuber = Math.floor(Math.random() * indexList.length);
-      if (board[randomnuber] === null) {
-        index = randomnuber;
-      } else {
-        index = randomnuber + 1;
-      }
+      const randomnumber = Math.floor(Math.random() * indexList.length);
+      index = indexList[randomnumber];
     }
   }
 
