@@ -14,12 +14,7 @@ function Game({id}) {
   const [lighted, setLigthed] = useState([]);
   const [playComputer, setPlayComputer] = useState(false);
   
-  // eğer kazanana veya beraberlik varsa 4 Sn sonra tahat yenilendi
-  useEffect(()=>{
-    if(winner || tie){
-        setTimeout(()=>{handleReset()},4000)
-    }
-  },[tie,winner])
+ 
   //Computer Saırasına göre method alıştırıldı
   useEffect(()=>{
     if(playComputer){
